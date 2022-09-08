@@ -7,9 +7,13 @@ double k2 = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите b2: ");
 double b2 = Convert.ToDouble(Console.ReadLine());
  
-if((k1 * b2 - k2 * b1) == 0)
+if(k1 == k2 && b1 != b2)
 {
-    Console.Write("Прямые параллельны, либо совпадают");
+    Console.Write("Прямые параллельны");
+}
+else if(k1 == k2 && b1 == b2)
+{
+    Console.Write("Прямые совпадают");
 }
 else
 { 
